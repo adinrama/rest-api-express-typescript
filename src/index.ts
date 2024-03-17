@@ -7,4 +7,4 @@ app.use('/', (req: Request, res: Response, next: NextFunction) => {
   res.status(200).send({ data: "Hello, I'm Nainnunissa" })
 })
 
-app.listen(port, () => console.log(`Server is listening on http://localhost:${port}`))
+app.listen(port, () => console.log(`Server is listening on port ${port}`))
