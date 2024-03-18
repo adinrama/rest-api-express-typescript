@@ -5,5 +5,5 @@ export const HealthRouter: Router = Router()
 
 HealthRouter.get('/', (req: Request, res: Response, next: NextFunction) => {
   logger.info('Health check successfully')
-  res.status(200).send({ status: '200' })
+  return res.status(200).send({ status: '200' })
 })
